@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  .card.text-center
+    .card-header
+      ul.nav.nav-tabs.card-header-tabs
+        li.nav-item
+          a.nav-link(href='/repgame') Play the game of Reputable Resources! 
+        li.nav-item
+          a.nav-link(href='/linkdir') Reputable resources, gathered for you 
+        li.nav-item
+          a.nav-link(href='/conversation') Difficult conversations: how to have them
+    .card-body
+      h1.card-title= title
+      p.card-text A resource to help spread understanding and compassion   
+
