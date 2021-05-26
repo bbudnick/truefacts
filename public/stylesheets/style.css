@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -13,7 +14,7 @@ body {
   display: flex; 
   flex-wrap: wrap-reverse;
   flex-direction: column-reverse;
-  justify-content: left; 
+  justify-content: center; 
 }
 
 .img {
