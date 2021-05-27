@@ -4,33 +4,86 @@ block content
 
     h1 Let's go! 
 
+    img(src='/images/bubbles.jpg' alt='Membranes under a microscope' style='width:30%')
+
     p Navigate to each of these websites and take a look at the information they host. 
     p Once you've noticed a few things, come back here and test your understanding what that resource provides!
 
-    h2 Check out 
+    h2 This link will open in a new tab. Check out 
         a(href='https://www.thelancet.com/coronavirus' target='_blank') The Lancet
 
     h2 Great! 
 
     p Time to quiz your knowledge: 
 
-    ul Who funds The Lancet? (Authority)
-    li A university 
-    li A private company 
-    li An individual 
-
-    ul What type of resource is The Lancet? (Currency)
-    li A journal 
-    li A non-profit organization 
-    li A private company 
-
-    ul Are articles published by The Lancet peer reviewed? (Accuracy)
-    li Yes 
-    li No 
-
-    ul Does The Lancet offer information about many topics or just a few? (Coverage)
-    li Many 
-    li A few 
-
- 
-
+    div(style='transform: scale(0.65); position: relative; top: -100px;')
+        h3 Who funds The Lancet? (Authority)
+        p Choose 1 answer
+        hr
+        #block-11(style='padding: 10px;')
+            label(for='option-11' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-11(type='radio' name='option' value='6/24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         A university
+            span#result-11
+        hr
+        #block-12(style='padding: 10px;')
+            label(for='option-12' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-12(type='radio' name='option' value='6' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         A private company 
+            span#result-12
+        hr
+        #block-13(style='padding: 10px;')
+            label(for='option-13' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-13(type='radio' name='option' value='1/3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         An individual 
+            span#result-13
+        hr
+        #block-14(style='padding: 10px;')
+            label(for='option-13' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-14(type='radio' name='option' value='1/3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         A non-profit organization 
+            span#result-14
+        hr
+        button(type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;') Submit
+    a#showanswer1
+    script(type='text/javascript').
+        function displayAnswer1() {
+            if (document.getElementById('option-11').checked) {
+            document.getElementById('block-11').style.border = '3px solid red'
+            document.getElementById('result-11').style.color = 'red'
+            document.getElementById('result-11').innerHTML = 'Incorrect!'
+            } 
+            if (document.getElementById('option-12').checked) {
+            document.getElementById('block-12').style.border = '3px solid red'
+            document.getElementById('result-12').style.color = 'red'
+            document.getElementById('result-12').innerHTML = 'Incorrect!'
+            showCorrectAnswer1()
+                }
+            if (document.getElementById('option-13').checked) {
+            document.getElementById('block-13').style.border = '3px solid red'
+            document.getElementById('result-13').style.color = 'red'
+            document.getElementById('result-13').innerHTML = 'Incorrect!'
+            showCorrectAnswer1()	
+            }
+            if (document.getElementById('option-14').checked) {
+            document.getElementById('block-14').style.border = '3px solid limegreen'
+            document.getElementById('result-14').style.color = 'limegreen'
+            document.getElementById('result-14').innerHTML = 'Correct!'
+            showCorrectAnswer1()	
+            }
+        }
+        // the functon displays the link to the correct answer
+        function showCorrectAnswer1() {
+            let showAnswer1 = document.createElement('p')
+            showAnswer1.innerHTML = 'Show Corrent Answer'
+            showAnswer1.style.position = 'relative'
+            showAnswer1.style.top = '-180px'
+            showAnswer1.style.fontSize = '1.75rem'
+                document.getElementById('showanswer1').appendChild(showAnswer1)
+                showAnswer1.addEventListener('click', () => {
+                document.getElementById('block-14').style.border = '3px solid limegreen'
+            document.getElementById('result-14').style.color = 'limegreen'
+            document.getElementById('result-14').innerHTML = 'Correct!'
+            document.getElementById('showanswer1').removeChild(showAnswer1)    
+            })
+            }
