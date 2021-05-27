@@ -11,13 +11,13 @@ block content
         li Authority 
         li Currency 
         li Coverage 
-        
+
     p Once you've noticed a few things, come back here and test your understanding of what that resource provides!
 
     h4 This link will open in a new tab:
     h2 Check out 
         a(href='https://www.thelancet.com/coronavirus' target='_blank') The Lancet
-        
+
     img(src='/images/bubbles.jpg' alt='Membranes under a microscope' style='width:30%')
 
     h2 Great! 
@@ -101,12 +101,12 @@ block content
     h4 This link will open in a new tab. 
     h2 Check out some articles about COVID-19 from 
         a(href='https://www.nature.com/search?q=coronavirus&journal=' target='_blank') Nature.com 
-        
+
     img(src='/images/mesh.jpg' alt='Membranes under a microscope' style='width:30%')
 
     h2 Great! 
 
-    p Time to quiz your knowledge: 
+    h4 Time to quiz your knowledge: 
 
     div(style='transform: scale(0.65); position: relative; top: -100px;')
         h3 How recently were these articles published? (Currency)
@@ -179,3 +179,136 @@ block content
             document.getElementById('showanswer1').removeChild(showAnswer1)    
             })
             }
+
+    h2 Getting the hang of it? 
+
+    p Try another one! 
+
+    h4 This link will open in a new tab:
+    h2 Check out 
+        a(href='https://www.wsj.com/news/collection/coronavirus-6dcf2a21' target='_blank') The Wall Street Journal
+
+    img(src='/images/heatmap.jpg' alt='Heatmap of China during the coronavirus pandemic' style='width:30%') 
+
+    h4 Time to quiz your knowledge: 
+
+    div(style='transform: scale(0.65); position: relative; top: -100px;')
+        h3 Does this resource offer a variety of perspectives? (Coverage)
+        p Choose 1 answer
+        hr
+        #block-31(style='padding: 10px;')
+            label(for='option-31' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-31(type='radio' name='option' value='6/24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         Yes
+            span#result-31
+        hr
+        #block-32(style='padding: 10px;')
+            label(for='option-32' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-32(type='radio' name='option' value='6' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         Somewhat
+            span#result-32
+        hr
+        #block-33(style='padding: 10px;')
+            label(for='option-33' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-33(type='radio' name='option' value='1/3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         No
+            span#result-33
+        hr
+        button(type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;') Submit
+    a#showanswer1
+    script(type='text/javascript').
+        function displayAnswer1() {
+            if (document.getElementById('option-31').checked) {
+            document.getElementById('block-31').style.border = '3px solid red'
+            document.getElementById('result-31').style.color = 'red'
+            document.getElementById('result-31').innerHTML = 'Incorrect!'
+            } 
+            if (document.getElementById('option-32').checked) {
+            document.getElementById('block-32').style.border = '3px solid limegreen'
+            document.getElementById('result-32').style.color = 'limegreen'
+            document.getElementById('result-32').innerHTML = 'Correct!'
+            showCorrectAnswer1()
+                }
+            if (document.getElementById('option-33').checked) {
+            document.getElementById('block-33').style.border = '3px solid red'
+            document.getElementById('result-33').style.color = 'red'
+            document.getElementById('result-33').innerHTML = 'Incorrect!'
+            showCorrectAnswer1()	
+            }
+        }
+        // the functon displays the link to the correct answer
+        function showCorrectAnswer1() {
+            let showAnswer1 = document.createElement('p')
+            showAnswer1.innerHTML = 'Show Correct Answer'
+            showAnswer1.style.position = 'relative'
+            showAnswer1.style.top = '-180px'
+            showAnswer1.style.fontSize = '1.75rem'
+                document.getElementById('showanswer1').appendChild(showAnswer1)
+                showAnswer1.addEventListener('click', () => {
+                document.getElementById('block-32').style.border = '3px solid limegreen'
+            document.getElementById('result-32').style.color = 'limegreen'
+            document.getElementById('result-32').innerHTML = 'Correct!'
+            document.getElementById('showanswer1').removeChild(showAnswer1)    
+            })
+            }
+
+    p The Wall Street Journal offers articles that tend to be moderate to conservative in perspective. 
+    p It can be helpful to check the overall political motives of a resource with this site: 
+
+    a(href='https://mediabiasfactcheck.com/wall-street-journal/' target='_blank') Media Bias Fact Check
+
+    p Well done! Let's learn how to tell if a resource offers information that's accurate or not. 
+
+    h4 This link will open in a new tab. 
+    h2 Check out this article from  
+        a(href='https://www.nature.com/search?q=coronavirus&journal=' target='_blank') WIRED
+
+    img(src='/images/tower.jpg' alt='Cloudy cell phone tower' style='width:30%')
+
+    h2 Great! 
+
+    h4 Time to quiz your knowledge: 
+
+    div(style='transform: scale(0.65); position: relative; top: -100px;')
+        h3 What would you do to verify that the information presented in this article is accurate? (Accuracy)
+        hr
+        #block-(style='padding: 10px;')
+            label(for='option-51' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-51(type='radio' name='option' value='6/24' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         Follow the links provided and establish the credibility of those resources. 
+            span#result-51
+        hr
+        #block-52(style='padding: 10px;')
+            label(for='option-52' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-52(type='radio' name='option' value='6' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         Research who funds this resource. 
+            span#result-52
+        hr
+        #block-53(style='padding: 10px;')
+            label(for='option-53' style=' padding: 5px; font-size: 2.5rem;')
+                input#option-53(type='radio' name='option' value='1/3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;')
+                |         Search for frequently occurring keywords and read articles that also include them. 
+            span#result-53
+        hr
+        button(type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;') Submit
+    a#showanswer1
+    script(type='text/javascript').
+        function displayAnswer1() {
+            if (document.getElementById('option-51').checked) {
+            document.getElementById('block-51').style.border = '3px solid limegreen'
+            document.getElementById('result-51').style.color = 'limegreen'
+            document.getElementById('result-51').innerHTML = 'Correct!'
+            } 
+            if (document.getElementById('option-52').checked) {
+            document.getElementById('block-52').style.border = '3px solid limegreen'
+            document.getElementById('result-52').style.color = 'limegreen'
+            document.getElementById('result-52').innerHTML = 'Correct!'
+                }
+            if (document.getElementById('option-53').checked) {
+            document.getElementById('block-53').style.border = '3px solid limegreen'
+            document.getElementById('result-53').style.color = 'limegreen'
+            document.getElementById('result-53').innerHTML = 'Correct!'
+            }
+        }
+        
+    p These are all good methods of confirming whether or not a resource presents accurate information. 
