@@ -13,19 +13,29 @@ block content
           a.nav-link(href='/conversation') Difficult conversations: how to have them
     .card-body
       h1.card-title= title
-      p.card-text A resource to help spread understanding and compassion   
+      p.card-text A resource to assist in personal research and sharing accurate information 
 
-    section.container.border.rounded.bg-light.w-50.mx-auto.mt-5.p-3
-        center
-            p COVID-19 Keywords
-                table.table-striped
-                    thead
-                        tr 
-                            th Keyword
-                            th Definition
-                            th Appears in: 
-                    tbody
-                        tr 
-                            td test 
-                            td test 
-                            td test
+    p The following is a snippet from Google Trends that shows the search frequency of the keyword "coronavirus" over the last 12 months.
+    p Compare this to the Google Trends search frequency for the keyword "vaccine" over the last year: 
+
+  script(type='text/javascript' src='https://ssl.gstatic.com/trends_nrtr/2578_RC01/embed_loader.js')
+  script(type='text/javascript').
+    trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"coronavirus","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"q=coronavirus&geo=US&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"});
+
+    trends.embed.renderWidget("US_cu_4Rjdh3ABAABMHM_en", "fe_line_chart_78e742e6-bf57-4bf1-b59a-514b8d024c27", {"guestPath":"https://trends.google.com:443/trends/embed/"});
+
+
+  section.container.border.rounded.bg-light.w-50.mx-auto.mt-5.p-3
+    center
+      p COVID-19 Keywords
+        table.table-striped
+          thead
+            tr 
+              th Keyword
+              th Definition
+              th Appears in: 
+          tbody
+            tr 
+              td test 
+              td test 
+              td test
