@@ -10,6 +10,7 @@ var testRouter = require('./routes/test');
 var gameRouter = require('./routes/repgame');
 var linkDirRouter = require('./routes/linkdir');
 var conversationRouter = require('./routes/conversation');
+var repGamePlay = require('./routes/repgameplay');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/test', testRouter);
 app.use('/repgame', gameRouter);
 app.use('/linkdir', linkDirRouter);
 app.use('/conversation', conversationRouter);
+app.use('/repgameplay', repGamePlay);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
