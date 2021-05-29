@@ -11,6 +11,7 @@ var gameRouter = require('./routes/repgame');
 var linkDirRouter = require('./routes/linkdir');
 var conversationRouter = require('./routes/conversation');
 var repGamePlay = require('./routes/repgameplay');
+var paperNope = require('./routes/papernope');
 
 var about = require('./routes/about');
 
@@ -33,6 +34,7 @@ app.use('/repgame', gameRouter);
 app.use('/linkdir', linkDirRouter);
 app.use('/conversation', conversationRouter);
 app.use('/repgameplay', repGamePlay);
+app.use('/papernope', paperNope);
 app.use('/about', about);
 
 // catch 404 and forward to error handler
