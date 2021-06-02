@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3ca4624b-f5b0-48eb-bac5-c8f14a44c1b6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/TrueFactsApp",
+    "appService.deploySubpath": "."
+}
