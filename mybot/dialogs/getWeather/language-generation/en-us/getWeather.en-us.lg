@@ -1,0 +1,6 @@
+[import](common.lg)
+
+# SendActivity_mGuIgT()
+[Activity
+    Text = Let's check the weather.
+]

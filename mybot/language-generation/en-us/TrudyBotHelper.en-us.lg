@@ -1,0 +1,19 @@
+[import](common.lg)
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# SendActivity_Greeting()
+[Activity
+    Text = W
+]
+
+# SendActivity_859266()
+[Activity
+    Text = Hello! I'm Trudy, I'm here to help. 
+]
+

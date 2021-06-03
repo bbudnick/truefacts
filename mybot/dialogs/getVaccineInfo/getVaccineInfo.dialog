@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "JZGxxd",
+    "name": "getVaccineInfo",
+    "description": "Get information about the vaccine"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "uYBPK6"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "gy5Sm2"
+          },
+          "activity": "${SendActivity_gy5Sm2()}"
+        }
+      ]
+    }
+  ],
+  "generator": "getVaccineInfo.lg",
+  "recognizer": "getVaccineInfo.lu.qna",
+  "id": "getVaccineInfo"
+}
