@@ -2,7 +2,7 @@ extends layout
 
 block content
  
-    section.container.border.rounded.bg-light.w-50.mx-auto.mt-5.p-3
+    section.container.border.rounded.bg-light.w-50.mx-auto.mt-10.p-3
         center
             h1= title
             p COVID-19 Resources 
@@ -11,13 +11,45 @@ block content
                         tr 
                             th Title of Resource
                             th Type of Resource
-                            th Source 
                             th Link 
                     tbody
-                        tr 
-                            td test 
-                            td test 
-                            td test
-                            td test 
+                       tr 
+                           td Who counts as an expert? 
+                           td An "expert" is someone who has dedicated their life to the study of a particular discipline. Academic credentials depend on the type of degree and the discipline the degree is in. The following is a link to a group of experts in fields that relate to COVID who are available for interview. 
+                           td 
+                                a(href='https://www.rti.org/covid-19-media-experts' target='_blank') COVID Experts
+                        tr
+                            td History of vaccines 
+                            td mRNA vaccines have been used for decades. Explore this resource from Nature.com that describes their development. 
+                            td 
+                                a(href='https://www.nature.com/articles/nrd.2017.243' target='_blank') Nature.com: mRNA Vaccine Overview
+                        tr
+                            td Types of COVID vaccines
+                            td The CDC has outlined the differences between each COVID vaccine developed by different companies around the world. 
+                            td 
+                                a(href='https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html' target='_blank') CDC.gov: Different Vaccines
+                        tr
+                            td Information on Face Masks 
+                            td From Nature.com, an analysis of the data around wearing a mask and the spread of COVID. 
+                            td 
+                                a(href='https://www.nature.com/articles/d41586-020-02801-8' target='_blank') Nature.com: Face masks 
+                        tr
+                            td High risk groups 
+                            td A great resource from the government of Utah, this website lists who is in a high risk group and why. 
+                            td 
+                                a(href='https://coronavirus.utah.gov/protecting-high-risk-individuals/' target='_blank') High risk individuals
+                        tr
+                            td Does a higher population of vaccinated people means a slower spread of the virus?
+                            td Tracking the spread of the virus after a percentage of the population has been vaccinated can be difficult. 
+                            td 
+                                a(href='https://www.nature.com/articles/d41586-021-00450-z' target='_blank') Nature.com: Difficult to measure wider impact of vaccine on spread of COVID
+
+    h3 This is a trendline that illustrates the number of people who ave received the COVID vaccine. It is from Our World In Data, an organization that analyzes and illustrates data.
+    a(href='https://ourworldindata.org/' target='_blank')
+
+    iframe(src='https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&pickerSort=desc&pickerMetric=total_vaccinations&Metric=People+vaccinated&Interval=Cumulative&Relative+to+Population=true&Align+outbreaks=false&country=~OWID_WRL&hideControls=true' loading='lazy' style='width: 90%; height: 600px; border: 5px none;')
+
 
     a.nav-link(href='/') Home Page
+
+
