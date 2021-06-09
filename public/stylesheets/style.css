@@ -3,8 +3,9 @@
 }
 
 body {
+  background-color: lightblue;
   padding: 50px;
-  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 80px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 10px; 
   padding: 10px;
 }
