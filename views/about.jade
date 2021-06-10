@@ -1,6 +1,22 @@
 extends layout 
 
 block content 
+  div
+        div
+          nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
+            ul.nav.navbar-nav
+              li.active
+                a(href='/') Home
+                  span.sr-only (current)
+              li
+                a(href='/repgame') Play the game of Reputable Resources!
+              li
+                a(href='/papernope') Academic paper? Or not?
+              li
+                a(href='/linkdir') Reputable resources, gathered for you 
+              li
+                a(href='/conversation') Difficult conversations: a quick guide
+        br
 
     h1 About the Author
     
