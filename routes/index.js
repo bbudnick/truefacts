@@ -25,9 +25,12 @@ router.get('/', function (req, res, next) {
     "useQueryString": true
   });
   url.then(function(result) {
+    let currentData = result.raw_body;
+    let obj = JSON.parse(currentData);
+    console.log(obj);
     jade.compile('index'); 
-    res.render('index', { title: 'True Facts', curData: result.raw_body});
-    console.log(result);
+    res.render('index', { title: 'True Facts', curData: currentData});
+    console.log(result.raw_body);
   });
 });
 
