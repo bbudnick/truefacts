@@ -1,24 +1,69 @@
 extends layout
+link(rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
 
 block content
+  div
+        div
+          nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
+            ul.nav.navbar-nav
+              li.active
+                a(href='/') Home
+                  span.sr-only (current)
+              li
+                a(href='/repgame') Play the game of Reputable Resources!
+              li
+                a(href='/papernope') Academic paper? Or not?
+              li
+                a(href='/linkdir') Reputable resources, gathered for you 
+              li
+                a(href='/conversation') Difficult conversations: a quick guide
+        br
+        .jumbotron
+          h1 TrueFacts: A Research Resource
+          p A resource to assist in personal research and sharing accurate information 
+        br
 
-  .card.text-center
-    .card-header
-      ul.nav.nav-tabs.card-header-tabs
-        li.nav-item
-          a.nav-link(href='/repgame') Play the game of Reputable Resources! 
-        li.nav-item
-          a.nav-link(href='/papernope') How to tell if an academic paper is reputable (or not)
-        li.nav-item
-          a.nav-link(href='/linkdir') Reputable resources, gathered for you 
-        li.nav-item
-          a.nav-link(href='/conversation') Difficult conversations: how to have them
-    .card-body
-      h1.card-title= title
-      p.card-text A resource to assist in personal research and sharing accurate information 
+  table.table
+    thead.thead-dark 
+    tbody
+      tr 
+        td mRNA Vaccine
+        td "Teaches the body's cells how to make a protein that triggers an immune response"
+        td
+          a(href='https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html' target='_blank') CDC: Vaccine Information 
+      tr
+        td Coronavirus Symptoms
+        td Can include fever, chills, headache, fatigue, shortness of breath, loss of taste or smell
+        td 
+          a(href='https://landing.google.com/screener/covid19?source=google' target='_blank') Google: Self Assessment for Covid Symptoms
+      tr
+        td Face Mask
+        td A face covering that diminishes the spread of saliva particles that could carry the virus if you are infected but not experiencing symptoms.
+        td 
+          a(href='https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html' target='_blank') CDC: Guidance for Wearing Masks
+      tr  
+        td Normal Body Temperature
+        td An adult's normal body temperature ranges from 97.9 to 100.4 F.
+        td 
+          a(href='https://www.webmd.com/first-aid/normal-body-temperature#:~:text=For%20a%20typical%20adult%2C%20body,vary%20throughout%20your%20lifetime%2C%20too.' target='_blank') WebMD: Normal Body Temperature
+      tr  
+        td Covid Testing Near Me
+        td Tests are now available for free across the US. 
+        td 
+          a(href='https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html' target='_blank') Health and Human Services: Covid Test Finder
+      tr 
+        td Herd Immunity 
+        td Accomplished when the majority of a population gains immunity through vaccination to a disease. 
+        td 
+          a(href='https://www.who.int/news-room/q-a-detail/herd-immunity-lockdowns-and-covid-19' target='_blank') World Health Organization
 
-    p The following is a snippet from Google Trends that shows the search frequency of the keyword "coronavirus" over the last 12 months.
-    p Compare this to the Google Trends search frequency for the keyword "vaccine" over the last year: 
+  br
+  .jumbotron
+     center
+       p The following is a snippet from Google Trends that shows the search frequency of the keyword "coronavirus" over the last 12 months.
+       p Compare this to the Google Trends search frequency for the keyword "vaccine" over the last year. 
+  br
 
   script(type='text/javascript' src='https://ssl.gstatic.com/trends_nrtr/2578_RC01/embed_loader.js')
   script(type='text/javascript').
@@ -26,44 +71,3 @@ block content
     trends.embed.renderWidget("US_cu_4Rjdh3ABAABMHM_en", "fe_line_chart_78e742e6-bf57-4bf1-b59a-514b8d024c27", {"guestPath":"https://trends.google.com:443/trends/embed/"});
 
 
-
-  section.container.border.rounded.bg-light.w-50.mx-auto.mt-5.p-3
-    center
-      p COVID-19 Keywords
-        table.table-striped
-          thead
-            tr 
-              th Keyword
-              th Info At A Glance
-              th Appears in: 
-          tbody
-            tr 
-              td mRNA Vaccine
-              td "Teaches the body's cells how to make a protein that triggers an immune response"
-              td
-                a(href='https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html' target='_blank') CDC: Vaccine Information 
-            tr
-              td Coronavirus Symptoms
-              td Can include fever, chills, headache, fatigue, shortness of breath, loss of taste or smell
-              td 
-                a(href='https://landing.google.com/screener/covid19?source=google' target='_blank') Google: Self Assessment for Covid Symptoms
-            tr
-              td Face Mask
-              td A face covering that diminishes the spread of saliva particles that could carry the virus if you are infected but not experiencing symptoms.
-              td 
-                a(href='https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html' target='_blank') CDC: Guidance for Wearing Masks
-            tr  
-              td Normal Body Temperature
-              td An adult's normal body temperature ranges from 97.9 to 100.4 F.
-              td 
-                a(href='https://www.webmd.com/first-aid/normal-body-temperature#:~:text=For%20a%20typical%20adult%2C%20body,vary%20throughout%20your%20lifetime%2C%20too.' target='_blank') WebMD: Normal Body Temperature
-            tr  
-              td Covid Testing Near Me
-              td Tests are now available for free across the US. 
-              td 
-                a(href='https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html' target='_blank') Health and Human Services: Covid Test Finder
-            tr 
-              td Herd Immunity 
-              td 
-              td 
-                a(href='' target='_blank')
