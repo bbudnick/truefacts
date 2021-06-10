@@ -27,6 +27,8 @@ block content
             p A resource to assist in personal research and sharing accurate information 
         br
 
+  ul #{curData}
+
   table.table
     thead.thead-dark 
     tbody
@@ -72,5 +74,4 @@ block content
   script(type='text/javascript').
     trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"covid","geo":"US","time":"today 12-m"},{"keyword":"coronavirus","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=covid,coronavirus&date=today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"});
     trends.embed.renderWidget("US_cu_4Rjdh3ABAABMHM_en", "fe_line_chart_78e742e6-bf57-4bf1-b59a-514b8d024c27", {"guestPath":"https://trends.google.com:443/trends/embed/"});
-
-
+    
