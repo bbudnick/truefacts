@@ -29,7 +29,7 @@ router.get('/', function (req, res, next) {
     let obj = JSON.parse(currentData);
     console.log(obj);
     jade.compile('index'); 
-    res.render('index', { title: 'True Facts', curData: currentData});
+    res.render('index', { title: 'True Facts', curData: obj});
     console.log(result.raw_body);
   });
 });

@@ -26,7 +26,10 @@ block content
             h1 TrueFacts: A Research Resource
             p A resource to assist in personal research and sharing accurate information 
         br
-  p Current data: #{curData}
+
+  each element in curData
+      tr 
+          td #{element.country}
 
   table.table
     thead.thead-dark 
