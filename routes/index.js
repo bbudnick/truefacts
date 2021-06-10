@@ -15,8 +15,6 @@ router.use(
 /* GET home page. */
 router.get('/', function (req, res, next) {
 
-
-let getCurData = async () => {
   const url = unirest("GET", "https://covid-19-data.p.rapidapi.com/country");
   url.query({
     "name": "usa",
@@ -26,20 +24,13 @@ let getCurData = async () => {
     "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
     "useQueryString": true
   });
-  url.end(function (res) {
-    if (res.error) throw new Error(res.error);
-    let result = res.body;
-    return result;
+  url.then(function(result) {
+    jade.compile('index'); 
+    res.render('index', { title: 'True Facts', curData: result.raw_body});
+    console.log(result);
   });
-}
-
-let result = getCurData(); 
-
-  console.log(JSON.stringify(result));
-  jade.compile('index')
-  res.render('index', { title: 'True Facts', curData: result });
-
-
 });
+
+
 
 module.exports = router;
