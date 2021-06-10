@@ -2,63 +2,67 @@ extends layout
 
 block content
   div
-        div
-          nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
-            ul.nav.navbar-nav
-              li.active
-                a(href='/') Home
-                  span.sr-only (current)
-              li
-                a(href='/repgame') Play the game of Reputable Resources!
-              li
-                a(href='/papernope') Academic paper? Or not?
-              li
-                a(href='/linkdir') Reputable resources, gathered for you 
-              li
-                a(href='/conversation') Difficult conversations: a quick guide
+      div
+        nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+                span.sr-only (current)
+            li
+              a(href='/repgame') Play Reputable Resources: The Game
+            li
+              a(href='/papernope') Academic Paper? Or Not?
+            li
+              a(href='/linkdir') Reputable Resources, Gathered For You  
+            li
+              a(href='/conversation') Quick Guide to Tough Talks
+              li  
+                a(href='/about') About
+        br
+        .jumbotron
+          center
+            h1 COVID-19: Common questions
+            p Options for handling them 
         br
 
-    h1 Common questions about COVID-19 and options for handling them 
+      ul 
+          h2 My family is skeptical of the vaccine. How do I talk with them? 
+          ul It's important to ask open-ended questions and remember that this is an unnerving time for everyone. The most trusted authority on the vaccine and whether or not it is safe is the CDC. 
+          a(href='https://www.cdc.gov/coronavirus/2019-ncov/vaccines/talk-about-vaccines.html' target='_blank') CDC.gov: Talk About Vaccines
+          h2 My workplace expects me to return to work but I'm not comfortable with precautions they've taken. What can I do? 
+          ul It is reasonable to be cautious when returning to regularly interacting with people in person. Some workplaces may require that their employees be vaccinated. 
+          a(href='https://www.webmd.com/vaccines/covid-19-vaccine/news/20210601/eeoc-says-employers-can-require-covid-19-vaccination' target='_blank') WebMD.com: Employers and COVID-19 Vaccination
+          h2 My partner is angry that I do not plan to get the vaccine. How do I talk with them? 
+          ul The decision to get the vaccine or not is entirely yours; it is important that your partner respects your decision. It is also important that whatever decision you make is informed by the science helped develop the vaccine. Consider the following information at this link that describes different demographics' apprehension around the vaccine. Why do you think some groups want it and others don't? What group do you identify with and why? 
+          a(href='https://www.kff.org/coronavirus-covid-19/poll-finding/kff-covid-19-vaccine-monitor-march-2021/' target='_blank') KFF.org: Vaccine Monitor
+          h2 I am confident the vaccine is safe. How do I convince others? 
+          ul Consider what convinced you! Where does this confidence come from? If someone had made you feel ashamed, would you have felt more or less likely to listen to the perspective they were advocating for? Read this study about Compliance and Self Reporting during COVID. Then, read this article from TIME Magazine about their findings on convincing people to get vaccinated.
+          a(href='https://www.frontiersin.org/articles/10.3389/fpsyg.2021.565845/full' target='_blank') Frontiers in Psychology
+          a(href='https://time.com/5951755/how-to-convince-people-to-get-vaccinated/' target='_blank') Time.com: How to convince people to get vaccinated
+          h2 I can't handle another quarantine. How do I cope? 
+          ul Take a look at this handy graphic on cases in different US states and the restrictions each state has currently enacted (as of June 2021). 
+          a(href='https://www.usatoday.com/storytelling/coronavirus-reopening-america-map/' target='_blank') USAToday.com: COVID-19 restrictions
+          ul Then, consider your current strategies for being alone with yourself. This article from Psychology Today is from 2016 but it offers timeless advice. 
+          a(href='https://www.psychologytoday.com/us/blog/the-art-closeness/201601/the-fine-art-being-yourself' target='_blank') Psychology Today: The fine art of being by yourself 
+          ul Finally, know that you are not alone, and you do not need to struggle alone. There are resources to help, and they are there for you to use. 
+          a(href='https://www.samhsa.gov/find-help/national-helpline' target='_blank') National Helpline
+          a(href='https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html' target='_blank') CDC: Coping With Stress 
+          ul Ultimately, when looking for resources on conversations about COVID-19, the vaccine, or mental health, keep the markers for reputability in mind. If the authors behind a resource aren't transparent about their funding, if it's difficult to find other information that backs up an assertion, consider that this resource might have motives that are less than pure. 
+          h3 Accuracy 
+          ul Does this source validate information that can be found elsewhere, from other sources that are credible? Remember that jargon, or the use of technical language, does not necessarily mean the source is credible.
+          h2 Authority
+          ul Check the URL of the website: does it end in .gov, .org, .net, or .edu? Some of those endings can influence the perspective of the information the website hosts. 
+          ul Does this source cite other reputable sources?
+          h2 Currency 
+          ul How recent is the information hosted on this site? 
+          ul Since there are so many innovations surrounding COVID-19, check that the source is dated within the last few months to be sure they are hosting the most up-to-date information. 
+          h2 Coverage 
+          ul Does the source offer information that is relevant to what you’re looking for? 
 
-    ul 
-        h2 My family is skeptical of the vaccine. How do I talk with them? 
-        li It's important to ask open-ended questions and remember that this is an unnerving time for everyone. The most trusted authority on the vaccine and whether or not it is safe is the CDC. 
-        a(href='https://www.cdc.gov/coronavirus/2019-ncov/vaccines/talk-about-vaccines.html' target='_blank') CDC.gov: Talk About Vaccines
-        h2 My workplace expects me to return to work but I'm not comfortable with precautions they've taken. What can I do? 
-        li It is reasonable to be cautious when returning to regularly interacting with people in person. Some workplaces may require that their employees be vaccinated. 
-        a(href='https://www.webmd.com/vaccines/covid-19-vaccine/news/20210601/eeoc-says-employers-can-require-covid-19-vaccination' target='_blank') WebMD.com: Employers and COVID-19 Vaccination
-        h2 My partner is angry that I do not plan to get the vaccine. How do I talk with them? 
-        li The decision to get the vaccine or not is entirely yours; it is important that your partner respects your decision. It is also important that whatever decision you make is informed by the science helped develop the vaccine. Consider the following information at this link that describes different demographics' apprehension around the vaccine. Why do you think some groups want it and others don't? What group do you identify with and why? 
-        a(href='https://www.kff.org/coronavirus-covid-19/poll-finding/kff-covid-19-vaccine-monitor-march-2021/' target='_blank') KFF.org: Vaccine Monitor
-        h2 I am confident the vaccine is safe. How do I convince others? 
-        li Consider what convinced you! Where does this confidence come from? If someone had made you feel ashamed, would you have felt more or less likely to listen to the perspective they were advocating for? Read this study about Compliance and Self Reporting during COVID. Then, read this article from TIME Magazine about their findings on convincing people to get vaccinated.
-        a(href='https://www.frontiersin.org/articles/10.3389/fpsyg.2021.565845/full' target='_blank') Frontiers in Psychology
-        a(href='https://time.com/5951755/how-to-convince-people-to-get-vaccinated/' target='_blank') Time.com: How to convince people to get vaccinated
-        h2 I can't handle another quarantine. How do I cope? 
-        li Take a look at this handy graphic on cases in different US states and the restrictions each state has currently enacted (as of June 2021). 
-        a(href='https://www.usatoday.com/storytelling/coronavirus-reopening-america-map/' target='_blank') USAToday.com: COVID-19 restrictions
-        li Then, consider your current strategies for being alone with yourself. This article from Psychology Today is from 2016 but it offers timeless advice. 
-        a(href='https://www.psychologytoday.com/us/blog/the-art-closeness/201601/the-fine-art-being-yourself' target='_blank') Psychology Today: The fine art of being by yourself 
-        li Finally, know that you are not alone, and you do not need to struggle alone. There are resources to help, and they are there for you to use. 
-        a(href='https://www.samhsa.gov/find-help/national-helpline' target='_blank') National Helpline
-        a(href='https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html' target='_blank') CDC: Coping With Stress 
-        li Ultimately, when looking for resources on conversations about COVID-19, the vaccine, or mental health, keep the markers for reputability in mind. If the authors behind a resource aren't transparent about their funding, if it's difficult to find other information that backs up an assertion, consider that this resource might have motives that are less than pure. 
-        h3 Accuracy 
-        li Does this source validate information that can be found elsewhere, from other sources that are credible? Remember that jargon, or the use of technical language, does not necessarily mean the source is credible.
-        h2 Authority
-        li Check the URL of the website: does it end in .gov, .org, .net, or .edu? Some of those endings can influence the perspective of the information the website hosts. 
-        li Does this source cite other reputable sources?
-        h2 Currency 
-        li How recent is the information hosted on this site? 
-        li Since there are so many innovations surrounding COVID-19, check that the source is dated within the last few months to be sure they are hosting the most up-to-date information. 
-        h2 Coverage 
-        li Does the source offer information that is relevant to what you’re looking for? 
-
-        h2 And, if you need a refresher on how to tell if a resource is reliable or not ... 
-        a.nav-link(href='/repgameplay') Play the game of Reputable Resources!
+          h2 And, if you need a refresher on how to tell if a resource is reliable or not ... 
+          a.nav-link(href='/repgameplay') Play the game of Reputable Resources!
 
 
-        a.nav-link(href='/') Home Page
 
 
 

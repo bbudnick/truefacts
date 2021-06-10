@@ -2,21 +2,22 @@ extends layout
 
 block content
   div
-        div
-          nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
-            ul.nav.navbar-nav
-              li.active
-                a(href='/') Home
-                  span.sr-only (current)
-              li
-                a(href='/repgame') Play the game of Reputable Resources!
-              li
-                a(href='/papernope') Academic paper? Or not?
-              li
-                a(href='/linkdir') Reputable resources, gathered for you 
-              li
-                a(href='/conversation') Difficult conversations: a quick guide
-        br
+      div
+        nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+                span.sr-only (current)
+            li
+              a(href='/repgame') Play Reputable Resources: The Game
+            li
+              a(href='/papernope') Academic Paper? Or Not?
+            li
+              a(href='/linkdir') Reputable Resources, Gathered For You  
+            li
+              a(href='/conversation') Quick Guide to Tough Talks
+              li  
+                a(href='/about') About
  
     section.container.border.rounded.bg-light.w-50.mx-auto.mt-10.p-3
         center
@@ -64,8 +65,5 @@ block content
     a(href='https://ourworldindata.org/' target='_blank')
 
     iframe(src='https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&pickerSort=desc&pickerMetric=total_vaccinations&Metric=People+vaccinated&Interval=Cumulative&Relative+to+Population=true&Align+outbreaks=false&country=~OWID_WRL&hideControls=true' loading='lazy' style='width: 90%; height: 600px; border: 5px none;')
-
-
-    a.nav-link(href='/') Home Page
 
 

@@ -2,28 +2,28 @@ extends layout
 
 block content 
   div
-        div
-          nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
-            ul.nav.navbar-nav
-              li.active
-                a(href='/') Home
-                  span.sr-only (current)
-              li
-                a(href='/repgame') Play the game of Reputable Resources!
-              li
-                a(href='/papernope') Academic paper? Or not?
-              li
-                a(href='/linkdir') Reputable resources, gathered for you 
-              li
-                a(href='/conversation') Difficult conversations: a quick guide
-        br
+      div
+        nav.navbar.navbar-inverse(role='navigation' style='padding-left:130px;')
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+                span.sr-only (current)
+            li
+              a(href='/repgame') Play Reputable Resources: The Game
+            li
+              a(href='/papernope') Academic Paper? Or Not?
+            li
+              a(href='/linkdir') Reputable Resources, Gathered For You  
+            li
+              a(href='/conversation') Quick Guide to Tough Talks
+              li  
+                a(href='/about') About
 
-    h1 About the Author
-    
-    img(src='/images/author.jpg' alt='Puzzle pieces in a jumble' style='width:45%')
-
-    p This project was created for the Mobile Health in COVID-19 course at Portland State University during spring quarter 2021. 
-    p The author, Brita Budnick, enjoyed blending their passion for research and computer science to create this project.
-    p They hope it can serve as a resource for learning to discern credible resources from biased ones and that it will serve to generate conversation. 
-
-    a.nav-link(href='/') Home Page
+      br
+      .jumbotron
+        center
+          h1 About the Author
+          p This project was created for the Mobile Health in COVID-19 course at Portland State University during spring quarter 2021. 
+          p The author, Brita Budnick, enjoyed blending their passion for research and computer science to create this project.
+          p They hope it can serve as a resource for learning to discern credible resources from biased ones and that it will serve to generate conversation. 
+          img(src='/images/author.jpg' alt='Puzzle pieces in a jumble' style='width:45%')
