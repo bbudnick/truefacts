@@ -26,11 +26,26 @@ block content
             h1 TrueFacts: A Research Resource
             p A resource to assist in personal research and sharing accurate information 
         br
+  center
+    h3 Current COVID data for the United States, pulled from the World Health Organization via 
+      a(href='https://www.covid19-api.com/' target='_blank') COVID-19 Data API 
 
-  each element in curData
-      tr 
-          td #{element.country}
+  table.table 
+    thead.thead-dark 
+      tbody 
+        each element in curData
+          tr  
+            td Country: #{element.country}
+            td Confirmed cases: #{element.confirmed}
+            td Recovered: #{element.recovered}
+            td Critical: #{element.critical}
+            td Deaths: #{element.deaths}
+            td Data from: #{element.lastUpdate}
 
+  br
+  center
+    h3 Important COVID Keywords  
+  br
   table.table
     thead.thead-dark 
     tbody
